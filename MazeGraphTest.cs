@@ -1,9 +1,10 @@
-﻿using System;
+﻿using UnityEngine;
+using System;
 using QuickGraph;
 using QuickGraph.Algorithms;
 
 
-public class MazeGraphTest
+public class MazeGraphTest : MonoBehaviour
 {
 	static int Main(string[] args){
 		AdjacencyGraph<MazeGraphVertex, MazeGraphEdge<MazeGraphVertex>> g = new AdjacencyGraph<MazeGraphVertex, MazeGraphEdge<MazeGraphVertex>> ();
