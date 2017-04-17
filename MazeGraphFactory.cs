@@ -129,7 +129,7 @@ namespace QuickGraph.Algorithms
 				a = MazeGraphFactory.GetVertex(g, rnd);
 				if (!(a.HasTreasure)) {
 					a.HasTreasure = true;
-					++k;
+					++j;
 				}
 			}
 

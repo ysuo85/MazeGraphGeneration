@@ -18,7 +18,7 @@ public class MazeGraphTest : MonoBehaviour
 		return 0;
 	}
 
-	private void Start(){
+	void Start(){
 		AdjacencyGraph<MazeGraphVertex, MazeGraphEdge<MazeGraphVertex>> g = new AdjacencyGraph<MazeGraphVertex, MazeGraphEdge<MazeGraphVertex>> ();
 		MazeVertexFactory vFact = new MazeVertexFactory ();
 		MazeEdgeFactory<MazeGraphVertex> eFact = new MazeEdgeFactory<MazeGraphVertex> ();
@@ -26,7 +26,7 @@ public class MazeGraphTest : MonoBehaviour
 		MazeGraphOptions opts = new MazeGraphOptions (6, 10, 3, 3, 3, false);
 
 		MazeGraphFactory.Create (g, vFact.Create, eFact.Create, rnd, opts);
-		Console.WriteLine (g.ToString ());
+		print (g.ToString ());
 	}
 }
 
